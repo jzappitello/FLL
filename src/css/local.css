@@ -721,7 +721,8 @@
   #cta {
     position: relative;
     padding: 3.125rem 0;
-    height: 2rem;
+    height: auto;
+    /* height: 2rem; */
   }
 
   #cta:before {
@@ -746,7 +747,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 100% !important;
     z-index: -2;
   }
 
@@ -783,7 +784,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: 10.5rem 0;
+    padding: 5.5rem 0;
   }
 }
 
