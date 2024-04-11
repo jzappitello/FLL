@@ -16,7 +16,7 @@ permalink: '/'
 <section id="hero">
   <div class="cs-container">
     <div class="cs-flex-group">
-      <span class="cs-topper">Friends of the Logan Library</span>
+      {# <span class="cs-topper">Friends of the Logan Library</span> #}
       <h1 class="cs-title">Empowering Our Community Through Logan Library's Purpose</h1>
       <p class="cs-text">
         {# The Friends of the Logan Library is a 
@@ -24,7 +24,7 @@ permalink: '/'
         A group of community supporters that work with the library administration to enhance the library.
         {# Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh
         condimentum. #}</p>
-      <a href="" class="cs-button-solid">Explore More</a>
+      <a href="" class="cs-button-solid">Donate Now</a>
       <a href="" class="cs-button-transparent">
         <img
           class="cs-img"
@@ -41,7 +41,7 @@ permalink: '/'
   </div>
 
   <!-- Background Image -->
-  {% image './src/images/landing.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image 'https://res.cloudinary.com/dbr4il6bz/image/upload/v1712720469/nlfcsau7mztjv3hpdnwa.png', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -108,7 +108,7 @@ permalink: '/'
     <!-- Right Content Section-->
     <div class="cs-right">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
+      <h2 class="cs-title">Friends of the <br/>Logan Library</h2>
       <p class="cs-text">
         In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
         libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
@@ -119,7 +119,7 @@ permalink: '/'
         libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
         aptent taciti sociosqu ad litora torquent per.
       </p>
-      <div class="cs-flex-group">
+      {# <div class="cs-flex-group">
         <p class="cs-flex-p">
           In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet
           imperdiet for mind.
@@ -135,8 +135,8 @@ permalink: '/'
           width="136"
           height="77"
 />
-      </div>
-      <a href="/about" class="button-solid">More About Us</a>
+      </div> #}
+      <a href="/about" class="button-solid">Join Friends</a>
     </div>
   </div>
 </section>
@@ -145,7 +145,7 @@ permalink: '/'
 <!--            Extra Content To Rank             -->
 <!-- ============================================ -->
 
-<section id="sbs-r">
+{# <section id="sbs-r">
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
@@ -171,7 +171,7 @@ permalink: '/'
       <a href="" class="button-solid">Learn More About Thing</a>
     </div>
   </div>
-</section>
+</section> #}
 
 <!-- ============================================ -->
 <!--                   Gallery                    -->
@@ -298,14 +298,13 @@ permalink: '/'
 <section id="cta">
   <div class="container">
     <h2 class="title">
-      Get It Done <br/>
-      With Us Today
-    </h2>
+      Make a Difference
+      {# Donate Today
+      <br/> Empower Our Mission #}{# Empower Our Mission:<br/> Donate Today #}</h2>
     <p>
-      Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add
-      these to the bottom of all pages.
+      The funds earned support special projects, equipment, programs, collections, and library improvements. Please email for information regarding donations.
     </p>
-    <a href="/contact" class="button-solid">Get an Estimate Now</a>
+    <a href="/contact" class="button-solid">Donate Now</a>
   </div>
   {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>

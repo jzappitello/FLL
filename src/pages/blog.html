@@ -2,12 +2,12 @@
 layout: 'base.html'
 description: 'Meta description for the page'
 metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Blog'
+tagTitle: 'Minutes'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/blog.css'
-permalink: 'blog/'
+permalink: 'minutes/'
 eleventyNavigation:
-    key: Blog
+    key: Minutes
     order: 200
 ---
 
@@ -17,7 +17,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-    <h1 id="home-h">Blog</h1>
+    <h1 id="home-h">Meeting Minutes</h1>
     {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
@@ -81,5 +81,5 @@ eleventyNavigation:
     <!--                Featured Posts                -->
     <!-- ============================================ -->
 
-    {% include 'featured-post.html' %}
+    {# {% include 'featured-post.html' %} #}
 </div>
