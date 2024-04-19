@@ -382,7 +382,7 @@
   }
 
   #navigation #navbar-menu.open {
-    height: 22.25rem;
+    height: auto;
     padding-top: 1.25rem;
     z-index: -100;
   }

@@ -2,10 +2,10 @@
 layout: 'base.html'
 description: 'Meta description for the page'
 metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Projects'
+tagTitle: 'Calendar'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/projects.css'
-permalink: 'projects/'
+permalink: 'calendar/'
 eleventyNavigation:
     key: Calendar
     order: 300
@@ -18,43 +18,184 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Our Projects</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <h1 id="home-h">Upcoming Events</h1>
+  {% image './src/images/calendar.png', 'Logan Library 1st floor self checkout.', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                   Calendar                    -->
 <!-- ============================================ -->
 
-<section id="gallery">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        {% image './src/images/portfolio/port1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port4.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port7.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        {% image './src/images/portfolio/port2.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port5.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port8.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        {% image './src/images/portfolio/port3.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port6.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port9.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+<section id='cal-test'>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
       </div>
     </div>
-    <a href="/contact" class="button-solid">Get Free Quote</a>
-  </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
+      </div>
+    </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
+      </div>
+    </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
+      </div>
+    </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
+      </div>
+    </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
+  <article class="dark-mode event-card">
+    <div class="date">
+      <p>
+        APR
+      </p>
+      <div>
+        17
+      </div>
+    </div>
+    <div class="event-info">
+      <p> Apr 17 - Apr 19</p>
+      <h3 class="cs-title event-title">
+        <a class="cs-title" href="">New Home Construction</a>
+      </h3>
+      <div class="other-details">
+        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
+          <p class="dropdown-label">See details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="details-content" id="details-1" aria-labelledby="btn-1">
+          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
+        </div>
+      </div>
+      <a href="" class="view-event-btn">View Event</a>
+    </div>
+  </article>
 </section>
 
 <!-- ============================================ -->

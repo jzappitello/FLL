@@ -69,6 +69,7 @@
 
         #cs-form {
             margin-bottom: 40/16rem;
+
             label {
                 font-size: 16/16rem;
                 line-height: 1.5em;
@@ -87,7 +88,8 @@
                 margin-bottom: clamp(2rem, 6.3vw, 3rem);
             }
 
-            input, textarea {
+            input,
+            textarea {
                 font-size: 16/16rem;
                 width: 100%;
                 height: 64/16rem;
@@ -119,8 +121,8 @@
             font-size: 16/16rem;
             line-height: 56/16rem;
             text-decoration: none;
-	    	font-weight: 700;
-	        text-align: center;
+            font-weight: 700;
+            text-align: center;
             margin: auto;
             color: #1a1a1a;
             min-width: 150/16rem;
@@ -151,6 +153,7 @@
             &:hover {
                 color: var(--bodyTextColorWhite);
                 cursor: pointer;
+
                 &:before {
                     width: 100%;
                 }
@@ -292,6 +295,7 @@
 
         #cs-form {
             max-width: 630/16rem;
+
             label {
                 width: 100%;
             }
@@ -324,6 +328,7 @@
     #cs-contact {
         #cs-form {
             column-gap: 0/16rem;
+
             label {
                 width: 48%;
                 max-width: 305/16rem;
@@ -344,12 +349,17 @@
 @media only screen and (min-width: 0em) {
     body.dark-mode {
         #cs-contact {
-            .cs-text, .cs-title {
+
+            .cs-text,
+            .cs-title {
                 color: var(--bodyTextColorWhite);
             }
 
             #cs-form {
-                label, input, textarea {
+
+                label,
+                input,
+                textarea {
                     background-color: transparent;
                     color: var(--bodyTextColorWhite);
 
@@ -371,4 +381,3 @@
         }
     }
 }
-                                

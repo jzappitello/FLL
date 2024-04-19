@@ -3,7 +3,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px - Contains hover animation */
 @media only screen and (min-width: 0em) {
-  #gallery {
+  #calendar {
     /* Centers button */
     text-align: center;
     padding: var(--sectionPadding);
@@ -11,12 +11,14 @@
     /* Prevents overflow from the image going off screen */
     overflow: hidden;
   }
-  #gallery .cs-container {
+
+  #calendar .cs-container {
     width: 100%;
     max-width: 82.625em;
     margin: auto;
   }
-  #gallery .cs-image-group {
+
+  #calendar .cs-image-group {
     /* used rem so it doesn't scale with the font size of on parent */
     font-size: min(1.1vw, 1em);
     width: 100%;
@@ -28,18 +30,21 @@
     align-items: flex-start;
     gap: 1.875em;
   }
-  #gallery .cs-row {
+
+  #calendar .cs-row {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 1.875em;
   }
-  #gallery .cs-picture {
+
+  #calendar .cs-picture {
     position: relative;
     display: block;
   }
-  #gallery .cs-picture img {
+
+  #calendar .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,43 +52,53 @@
     width: 100%;
     object-fit: cover;
   }
-  #gallery .cs-row-1 .cs-picture-1 {
+
+  #calendar .cs-row-1 .cs-picture-1 {
     width: 26.25em;
     height: 35.4375em;
   }
-  #gallery .cs-row-1 .cs-picture-2 {
+
+  #calendar .cs-row-1 .cs-picture-2 {
     width: 26.25em;
     height: 39.3125em;
   }
-  #gallery .cs-row-1 .cs-picture-3 {
+
+  #calendar .cs-row-1 .cs-picture-3 {
     width: 26.25em;
     height: 32em;
   }
-  #gallery .cs-row-2 .cs-picture-1 {
+
+  #calendar .cs-row-2 .cs-picture-1 {
     width: 26.25em;
     height: 30.75em;
   }
-  #gallery .cs-row-2 .cs-picture-2 {
+
+  #calendar .cs-row-2 .cs-picture-2 {
     width: 26.25em;
     height: 32.3125em;
   }
-  #gallery .cs-row-2 .cs-picture-3 {
+
+  #calendar .cs-row-2 .cs-picture-3 {
     width: 26.25em;
     height: 39.3125em;
   }
-  #gallery .cs-row-3 .cs-picture-1 {
+
+  #calendar .cs-row-3 .cs-picture-1 {
     width: 26.25em;
     height: 39.0625em;
   }
-  #gallery .cs-row-3 .cs-picture-2 {
+
+  #calendar .cs-row-3 .cs-picture-2 {
     width: 26.25em;
     height: 28.25em;
   }
-  #gallery .cs-row-3 .cs-picture-3 {
+
+  #calendar .cs-row-3 .cs-picture-3 {
     width: 26.25em;
     height: 39.3125em;
   }
 }
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
@@ -93,6 +108,7 @@
     position: relative;
     padding: 3.125rem 0;
   }
+
   #cta:before {
     content: '';
     position: absolute;
@@ -105,9 +121,11 @@
     left: 0;
     z-index: -1;
   }
+
   #cta .container {
     text-align: center;
   }
+
   #cta picture {
     position: absolute;
     top: 0;
@@ -116,6 +134,7 @@
     width: 100%;
     z-index: -2;
   }
+
   #cta picture img {
     position: absolute;
     top: 0;
@@ -124,6 +143,7 @@
     width: 100%;
     object-fit: cover;
   }
+
   #cta .title {
     font-weight: 900;
     font-size: min(9vw, 3rem);
@@ -133,6 +153,7 @@
     margin-bottom: 2.25rem;
     text-align: center;
   }
+
   #cta p {
     color: #fff;
     text-align: center;
@@ -143,21 +164,25 @@
     max-width: 37.375rem;
   }
 }
+
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
     padding: 10.5rem 0;
   }
 }
+
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
     margin-top: 6.25rem;
   }
+
   #cta:before {
     display: none;
   }
+
   #cta:after {
     content: '';
     position: absolute;
@@ -174,15 +199,18 @@
     transform: translateX(-50%);
     z-index: -3;
   }
+
   #cta .container {
     width: 90.0625%;
     margin: auto;
   }
+
   #cta picture {
     width: 90.0625%;
     left: 50%;
     transform: translateX(-50%);
   }
+
   #cta picture:before {
     content: '';
     position: absolute;
@@ -196,9 +224,113 @@
     z-index: 1;
   }
 }
+
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #cta:after {
     display: none;
   }
+}
+
+
+/* ============================================
+CAL-TEST
+============================================ */
+
+#cal-test {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  margin: 0 auto;
+  padding: 40px 16px;
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#cal-test .event-card {
+  /* background-color: #fff; */
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+}
+
+#cal-test .event-card .date {
+  background-color: var(--primary);
+  text-transform: capitalize;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+#cal-test .event-card .date p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+#cal-test .event-card .date div {
+  font-size: 1.875rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+#cal-test .event-card .event-info {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+}
+
+#cal-test .event-card .event-info .cs-title {
+  color: #000;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+#cal-test .event-card .other-details {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+#cal-test .event-card .details-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#cal-test .event-card .details-dropdown p {
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+#cal-test .event-card .details-dropdown svg {
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#cal-test .event-card .details-content {
+  display: grid;
+  gap: 4px;
+}
+
+#cal-test .event-card .view-event-btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 16px;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }

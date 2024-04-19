@@ -8,6 +8,7 @@
     z-index: 10000;
     height: auto;
   }
+
   #navigation .background-color-div {
     position: absolute;
     top: 0;
@@ -17,25 +18,31 @@
     height: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
+
   #navigation .container {
     padding: 0.8125em 0;
     width: 96%;
   }
+
   #navigation .logo {
     display: inline-block;
     height: 1.875em;
     width: auto;
   }
+
   #navigation .logo img {
     width: auto;
     height: 100%;
   }
+
   #navigation .logo .light {
     display: none;
   }
+
   #navigation .logo .dark {
     display: block;
   }
+
   #navigation .hamburger-menu {
     position: absolute;
     right: 0em;
@@ -50,6 +57,7 @@
     transform: translateY(-50%);
     transition: top .3s;
   }
+
   #navigation .hamburger-menu span {
     height: 2px;
     width: 1.875em;
@@ -60,6 +68,7 @@
     transform: translateX(-50%);
     transition: background-color 0.3s;
   }
+
   #navigation .hamburger-menu span:before {
     content: '';
     position: absolute;
@@ -72,6 +81,7 @@
     left: 0;
     transition: width .3s, left .3s, top .3s, transform .5s;
   }
+
   #navigation .hamburger-menu span:after {
     content: '';
     position: absolute;
@@ -84,21 +94,25 @@
     left: 0;
     transition: width .3s, left .3s, top .3s, transform .3s;
   }
+
   #navigation .hamburger-menu.clicked span {
     background-color: transparent;
   }
+
   #navigation .hamburger-menu.clicked span:before {
     width: 100%;
     transform: translate(-50%, -50%) rotate(225deg);
     left: 50%;
     top: 50%;
   }
+
   #navigation .hamburger-menu.clicked span:after {
     width: 100%;
     transform: translate(-50%, -50%) rotate(-225deg);
     left: 50%;
     top: 50%;
   }
+
   #navigation #navbar-menu {
     position: fixed;
     right: 0;
@@ -114,10 +128,12 @@
     height: 0;
     transition: height 0.3s, padding-top 0.3s, top 0.3s;
   }
+
   #navigation #navbar-menu ul {
     padding: 0;
     perspective: 700px;
   }
+
   #navigation #navbar-menu ul li {
     list-style: none;
     margin-bottom: 1.5em;
@@ -127,21 +143,27 @@
     transform: translateY(-0.4375em) rotateX(90deg);
     transition: opacity .5s, transform .5s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(1) {
     transition-delay: .1s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(2) {
     transition-delay: .2s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(3) {
     transition-delay: .3s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(4) {
     transition-delay: .4s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(5) {
     transition-delay: .5s;
   }
+
   #navigation #navbar-menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -152,6 +174,7 @@
     position: relative;
     font-weight: bold;
   }
+
   #navigation #navbar-menu ul li a.active:before {
     content: '';
     position: absolute;
@@ -165,16 +188,19 @@
     right: -0.31578947em;
     z-index: -1;
   }
+
   #navigation #navbar-menu.open {
-    height: 19.125em;
+    height: auto;
     padding-top: 1.25em;
     z-index: -100;
   }
+
   #navigation #navbar-menu.open ul li {
     opacity: 1;
     transform: translateY(0) rotateX(0);
   }
 }
+
 /* Mobile - Side Pop Out */
 @media only screen and (max-width: 1023px) {
   #navigation {
@@ -185,6 +211,7 @@
     z-index: 10000;
     height: auto;
   }
+
   #navigation .background-color-div {
     position: absolute;
     top: 0;
@@ -194,25 +221,31 @@
     height: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
+
   #navigation .container {
     padding: 0.8125em 0;
     width: 96%;
   }
+
   #navigation .logo {
     display: inline-block;
     height: 1.875em;
     width: auto;
   }
+
   #navigation .logo img {
     width: auto;
     height: 100%;
   }
+
   #navigation .logo .light {
     display: none;
   }
+
   #navigation .logo .dark {
     display: block;
   }
+
   #navigation .hamburger-menu {
     position: absolute;
     right: 0em;
@@ -227,6 +260,7 @@
     transform: translateY(-50%);
     transition: top .3s;
   }
+
   #navigation .hamburger-menu span {
     height: 2px;
     width: 1.875em;
@@ -237,6 +271,7 @@
     transform: translateX(-50%);
     transition: background-color 0.3s;
   }
+
   #navigation .hamburger-menu span:before {
     content: '';
     position: absolute;
@@ -249,6 +284,7 @@
     left: 0;
     transition: width .3s, left .3s, top .3s, transform .5s;
   }
+
   #navigation .hamburger-menu span:after {
     content: '';
     position: absolute;
@@ -261,21 +297,25 @@
     left: 0;
     transition: width .3s, left .3s, top .3s, transform .3s;
   }
+
   #navigation .hamburger-menu.clicked span {
     background-color: transparent;
   }
+
   #navigation .hamburger-menu.clicked span:before {
     width: 100%;
     transform: translate(-50%, -50%) rotate(225deg);
     left: 50%;
     top: 50%;
   }
+
   #navigation .hamburger-menu.clicked span:after {
     width: 100%;
     transform: translate(-50%, -50%) rotate(-225deg);
     left: 50%;
     top: 50%;
   }
+
   #navigation #navbar-menu {
     position: fixed;
     right: 0;
@@ -291,12 +331,14 @@
     width: 0em;
     transition: width .3s;
   }
+
   #navigation #navbar-menu ul {
     padding: 0;
     perspective: 700px;
     padding-right: 1.25em;
     padding-top: 3.125em;
   }
+
   #navigation #navbar-menu ul li {
     list-style: none;
     margin-bottom: 1.5em;
@@ -306,21 +348,27 @@
     transform: translateY(-0.4375em) rotateX(0deg);
     transition: opacity .5s, transform .5s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(1) {
     transition-delay: .1s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(2) {
     transition-delay: .2s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(3) {
     transition-delay: .3s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(4) {
     transition-delay: .4s;
   }
+
   #navigation #navbar-menu ul li:nth-of-type(5) {
     transition-delay: .5s;
   }
+
   #navigation #navbar-menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -331,6 +379,7 @@
     position: relative;
     font-weight: bold;
   }
+
   #navigation #navbar-menu ul li a.active:before {
     content: '';
     position: absolute;
@@ -344,10 +393,12 @@
     right: -0.31578947em;
     z-index: -1;
   }
+
   #navigation #navbar-menu.open {
     width: 15.625em;
     z-index: -100;
   }
+
   #navigation #navbar-menu.open ul li {
     opacity: 1;
     transform: translateY(0) rotateX(0);
