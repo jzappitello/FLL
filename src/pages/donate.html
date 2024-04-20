@@ -4,7 +4,7 @@ description: "Meta description for the page"
 metaTitle: 'Title that shows up on google searches'
 tagTitle: 'Donate'
 preloadImg: '/images/cabinets2-1920w.webp'
-preloadCSS: '/css/about.css'
+preloadCSS: '/css/contact.css'
 permalink: 'donate/'
 eleventyNavigation:
     key: Donate
@@ -23,10 +23,66 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+    <div class="cs-container">
+        <form id="cs-form" name="Contact Form" method="post">
+            <div class="cs-content">
+                <span class="cs-topper">Empower Our Mission</span>
+                <h2 class="cs-title">Thank You</h2>
+                <p class="cs-text">
+                    Make a difference in your community by donating a monetary gift to the Friends of the Logan Library. The funds earned support special projects, equipment, programs, collections, and library improvements. Please email for any information regarding donations.
+                    <br/>
+                    <br/>
+                    The Friends of the Logan Library is a non-profit 501(c)(3) organization with a board of elected officers.
+                </p>
+            </div>
+            <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+            </label>
+            <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+            </label>
+            <label>
+                City/Zip
+                <input type="text" id="find" name="find-us" placeholder="City/Zip">
+            </label>
+            <label class="cs-label-message">
+                Message
+                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Send Donation</button>
+        </form>
+        <div class="cs-right-section">
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a class="cs-link" href="mailto:friendsoftheloganlibrary@gmail.com">friendsoftheloganlibrary@gmail.com</a>
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a class="cs-link" href="tel:219-555-1234">(435) 374-3932</a>
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a class="cs-link" href="">2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a>
+
+            <!-- Background Image-->
+            {% image './src/images/skyscraper.jpg', 'building', '', 'lazy'%}
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs">
+{# <section id="sbs">
     <div class="cs-container">
         <!-- Left Image Section -->
         <div class="cs-left">
@@ -54,13 +110,13 @@ eleventyNavigation:
             <a href="" class="button-solid">More About Us</a>
         </div>
     </div>
-</section>
+</section> #}
 
 <!-- ============================================ -->
 <!--             Final Call to Action             -->
 <!-- ============================================ -->
 
-<section id="cta">
+{# <section id="cta">
     <div class="container">
         <h2 class="title">Get It Done <br> With Us Today</h2>
         <p>
@@ -69,4 +125,4 @@ eleventyNavigation:
         <a href="/contact.html" class="button-solid">Free Estimate</a>
     </div>
     {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
-</section>
+</section> #}

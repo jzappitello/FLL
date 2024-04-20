@@ -1,0 +1,90 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Join'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'join/'
+eleventyNavigation:
+    key: Join
+    order: 100
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Join Friends</h1>
+  {% image './src/images/join.png', 'Logan Library childrens area.', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+  <div class="cs-container">
+    <form id="cs-form" name="Contact Form" method="post">
+      <div class="cs-content">
+        <span class="cs-topper">Welcome</span>
+        <h2 class="cs-title">Benefits of Joining</h2>
+        <p class="cs-text">
+          In addition to the joy of supporting an important growing community center and hub of activity, being a Friend of the Logan Library will give you these benefits:
+                </p>
+        <ul class="cs-list">
+          <li class="cs-list-item">Opportunities to lend your talents in support of the Library and community;</li>
+          <li class="cs-list-item">Contributing to improving the quality of life in our town;</li>
+          <li class="cs-list-item">A chance to meet other community or library-minded people;</li>
+          <li class="cs-list-item">Email updates;</li>
+          <li class="cs-list-item">Invitation to special events.</li>
+        </div>
+        <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+        </label>
+        <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+        </label>
+        <label>
+                Address
+                <input type="text" id="find" name="find-us" placeholder="Address">
+        </label>
+        <label>
+                Address 2
+                <input type="text" id="find" name="find-us" placeholder="Optional">
+        </label>
+        <label>
+                City/Zip
+                <input type="text" id="find" name="find-us" placeholder="City/Zip">
+        </label>
+        <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+        </label>
+        <label class="cs-label-message">
+                Message
+                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+        </label>
+        <button class="cs-button-solid" type="submit">Submit</button>
+      </form>
+      <div class="cs-right-section">
+        <!--Email-->
+        <span class="cs-header">Email</span>
+        <a class="cs-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+        <!--Phone-->
+        <span class="cs-header">Phone</span>
+        <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
+        <!--Address-->
+        <span class="cs-header">Address</span>
+        <a class="cs-link" href="">2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a>
+
+        <!-- Background Image-->
+        {% image './src/images/skyscraper.jpg', 'building', '', 'lazy'%}
+      </div>
+    </div>
+  </section>

@@ -54,7 +54,7 @@
 
   #sbs .cs-picture2 {
     width: 25.875em;
-    height: 25em;
+    height: 21em;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
     /* 6px - 12px */
@@ -734,7 +734,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: .6;
     top: 0;
     left: 0;
     z-index: -1;
@@ -836,7 +836,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: .5;
     top: 0;
     left: 0;
     z-index: 1;

@@ -62,8 +62,22 @@
     max-width: clamp(25.25rem, 30vw, 32.625rem);
     margin: 0 auto 0 0;
     /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
+    margin-bottom: clamp(1rem, 6.3vw, 1.5rem);
     color: var(--bodyTextColor);
+  }
+
+  #cs-contact .cs-list {
+    padding: 0;
+    margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
+  }
+
+  #cs-contact .cs-list-item {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    /* 404px - 522px */
+    max-width: clamp(25.25rem, 30vw, 32.625rem);
+    margin: 0 auto 0.5rem 1rem;
   }
 
   #cs-contact #cs-form {
