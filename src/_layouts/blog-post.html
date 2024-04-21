@@ -6,7 +6,7 @@ eleventyComputed:
     metaTitle: '{{ blogTitle }}'
     tagTitle: '{{ titleTag }}'
     preloadImg: '{{ image }}'
-    permalink: '/blog/{{ pageName | slug }}/index.html'
+    permalink: '/minutes/{{ pageName | slug }}/index.html'
 ---
 
 <!-- ============================================ -->
@@ -14,7 +14,8 @@ eleventyComputed:
 <!-- ============================================ -->
 
 <section id="int-hero">
-    {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+    {% image 'https://res.cloudinary.com/dbr4il6bz/image/upload/v1712720469/nlfcsau7mztjv3hpdnwa.png', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+    {# {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%} #}
 </section>
 
 <!-- ============================================ -->
@@ -65,5 +66,5 @@ eleventyComputed:
     <!--                   Sidebar                    -->
     <!-- ============================================ -->
 
-    {% include 'featured-post.html' %}
+    {# {% include 'featured-post.html' %} #}
 </div>

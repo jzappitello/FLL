@@ -282,11 +282,14 @@ CAL-TEST
 }
 
 #cal-test .event-card .event-info .cs-title {
-  color: #000;
-  mix-blend-mode: difference;
+  /* color: var(--headerColor); */
+  text-align: center;
+}
+
+#cal-test .event-card .event-info .cs-title .cs-link {
   text-decoration: none;
   font-size: 24px;
-  text-align: center;
+  color: inherit;
 }
 
 #cal-test .event-card .other-details {
@@ -311,6 +314,7 @@ CAL-TEST
 
 #cal-test .event-card .details-dropdown svg {
   pointer-events: none;
+  color: inherit;
   width: 16px;
   height: 16px;
   transition-property: transform;
