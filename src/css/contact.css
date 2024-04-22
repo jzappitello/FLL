@@ -176,7 +176,30 @@
 
   #cs-contact .cs-right-section {
     position: relative;
-    height: 20rem;
+    height: 30rem;
+    background-image: url("https://res.cloudinary.com/dbr4il6bz/image/upload/v1713762144/qah30kdl8z2t4wi0gukl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 24px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
+    border-radius: 0.5rem;
+    /* cuts off corners on img tag */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  #cs-contact .cs-right-section-two {
+    position: relative;
+    height: 30rem;
+    background-image: url("https://res.cloudinary.com/dbr4il6bz/image/upload/v1713762396/zju5nq2elq0yoil1mtmr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     /* 24px - 40px top & bottom */
     /* 20px - 40px left & right */
     padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
@@ -312,6 +335,7 @@
   #cs-contact .cs-right-section {
     /* changes to 578px at 1300px wide */
     height: 42.875rem;
+    margin: auto 0;
     width: 40%;
     max-width: 33.875rem;
     /* prevents flexbox from squishing it */
@@ -319,6 +343,22 @@
   }
 
   #cs-contact .cs-right-section:hover .cs-bg-picture {
+    z-index: -1;
+    transform: scale(1.1);
+  }
+
+  #cs-contact .cs-right-section-two {
+    /* changes to 578px at 1300px wide */
+    height: 42.875rem;
+    margin: auto 0;
+    width: 40%;
+    max-width: 33.875rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+
+  #cs-contact .cs-right-section-two:hover .cs-bg-picture {
+    z-index: -1;
     transform: scale(1.1);
   }
 
@@ -344,7 +384,13 @@
   }
 
   #cs-contact .cs-right-section {
-    height: 36.125rem;
+    margin: auto 0;
+    height: 40rem;
+  }
+
+  #cs-contact .cs-right-section-two {
+    margin: auto 0;
+    height: 45rem;
   }
 }
 
