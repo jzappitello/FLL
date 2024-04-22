@@ -187,7 +187,7 @@
   }
 
   body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primaryShade);
   }
 
   body.dark-mode #sbs .cs-title,
