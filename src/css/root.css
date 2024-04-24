@@ -850,6 +850,15 @@
     margin-top: 6.25rem;
     line-height: 2.25rem;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .credit .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #footer .credit a {
@@ -950,6 +959,14 @@
 
   #footer .credit .copyright {
     display: inline-block;
+  }
+
+  #footer .credit .bottom {
+    flex-direction: row;
+  }
+
+  #footer .credit .left {
+    margin-right: 1rem;
   }
 }
 
