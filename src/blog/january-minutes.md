@@ -2,8 +2,9 @@
 pageName: january-meeting-minutes
 blogTitle: 18 Jan 2023 Friends of the Logan Library Board Meeting
 titleTag: 18 Jan 2023 Friends of the Logan Library Board Meeting
-blogDescription: Meeting minutes from the Friends of the Logan Library Board Meeting in January 18, 2023
-author: Ann Norman
+blogDescription: Meeting minutes from the Friends of the Logan Library Board
+  Meeting in January 18, 2023
+author: Jordan Zappitello
 date: 2023-01-18T16:30:18.253Z
 tags:
   - post
