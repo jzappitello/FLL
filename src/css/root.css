@@ -808,7 +808,7 @@
     color: var(--primary);
   }
 
-  #footer .right-section .lists ul h2 {
+  #footer .right-section .lists ul h3 {
     color: #fff;
     font-size: 1.125rem;
     line-height: 1.16666667em;
@@ -818,7 +818,7 @@
     position: relative;
   }
 
-  #footer .right-section .lists ul h2:before {
+  #footer .right-section .lists ul h3:before {
     content: '';
     position: absolute;
     display: block;
