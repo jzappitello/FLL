@@ -234,6 +234,110 @@
 
 
 /* ============================================
+PLACEHOLDER
+============================================ */
+
+#placeholders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 16px;
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#placeholders .cs-topper {
+  /* 13px - 16px */
+  font-size: clamp(0.8125rem, 1.6vw, 1rem);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#placeholders .cs-title {
+  font-size: var(--headerFontSize);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem;
+  color: var(--headerColor);
+  position: relative;
+}
+
+body.dark-mode #placeholders .cs-title,
+body.dark-mode #placeholders .cs-text {
+  color: var(--bodyTextColorWhite);
+}
+
+#placeholders .cs-text {
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: center;
+  width: 100%;
+  max-width: 46.875rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+#placeholders .cs-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#placeholders .cs-button-solid {
+  font-size: 1rem;
+  /* 46px - 56px */
+  line-height: clamp(2.875em, 5.5vw, 3.5em);
+  width: 11.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0.5rem 1rem 0.5rem;
+  color: var(--headerColor);
+  padding: 0;
+  background-color: var(--primary);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: color .3s;
+}
+
+#placeholders .cs-button-solid:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #000;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width .3s;
+}
+
+#placeholders .cs-button-solid:hover {
+  color: var(--bodyTextColorWhite);
+}
+
+#placeholders .cs-button-solid:hover:before {
+  width: 100%;
+}
+
+
+/* ============================================
 CAL-TEST
 ============================================ */
 
