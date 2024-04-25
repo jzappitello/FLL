@@ -1,15 +1,15 @@
 {
   "name": "Friends of the Logan Library",
   "email": "friendsoftheloganlibrary@gmail.com",
-  "phone": "435-716-9123",
-  "phoneFormatted": "(435) 716-9123",
+  "phone": "435-374-3932",
+  "phoneFormatted": "(435) 374-3932",
   "address": {
     "lineOne": "285 North Main",
     "lineTwo": "",
     "city": "Logan",
     "county": "UT",
     "postcode": "84321",
-    "mapLink": "https://maps.app.goo.gl/vqCyt3TEyQLTzwMB8"
+    "mapLink": "https://maps.app.goo.gl/3ArFVgiZwgaM85RR9"
   },
   "domain": "loganlibraryfriends.org"
 }
