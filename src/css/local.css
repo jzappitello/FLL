@@ -60,7 +60,7 @@
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
     right: 0;
-    bottom: 0;
+    bottom: -15px;
   }
 
   #sbs .cs-right {
