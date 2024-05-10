@@ -1,11 +1,11 @@
 ---
-pageName: january-meeting-minutes
-blogTitle: Jan 2023 FLL Board Meeting
-titleTag: 18 Jan 2023 Friends of the Logan Library Board Meeting
+pageName: may-meeting-minutes
+blogTitle: May 2023 FLL Board Meeting
+titleTag: 18 May 2023 Friends of the Logan Library Board Meeting
 blogDescription: Meeting minutes from the Friends of the Logan Library Board
-  Meeting in January 18, 2023
+  Meeting in May 18, 2023
 author: Jordan Zappitello
-date: 2023-01-18T16:30:18.253Z
+date: 2023-05-18T16:30:18.253Z
 tags:
   - post
   - featured

@@ -26,6 +26,13 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <div class="blog-container main-content-wrapper">
+
+    <!-- ============================================ -->
+    <!--                Featured Posts                -->
+    <!-- ============================================ -->
+
+    {# {% include 'featured-post.html' %} #}
+    {# {% include 'minutes-post.html' %} #}
     <!--Main content -->
     <div class="main-content">
         <!-- ============================================ -->
@@ -57,8 +64,7 @@ eleventyNavigation:
               alt="house"
               width="32"
               height="32"
-              decoding="async"
-/>
+              decoding="async"/>
                         </picture>
                         <span class="blog-author">{{ post.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
