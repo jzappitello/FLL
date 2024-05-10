@@ -8,7 +8,7 @@ author: Jordan Zappitello
 date: 2023-05-18T16:30:18.253Z
 tags:
   - post
-  - featured
+  - minutes
 image: /images/blog/cta2.png
 imageAlt: Kitchen
 ---
