@@ -38,11 +38,11 @@ eleventyNavigation:
         <!-- ============================================ -->
         <!--                 Blog Articles                -->
         <!-- ============================================ -->
-
         {% if collections.post | length == 0 %}
             <h1>No Recent Posts</h1>
         {% endif %}
-        {%- for post in collections.post | reverse -%}
+        {# {%- for post in collections.post | reverse -%} #}
+        {%- for post in collections.minutes | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">

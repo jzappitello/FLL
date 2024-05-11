@@ -271,7 +271,7 @@
 @media only screen and (min-width: 0em) {
   .recent-articles {
     overflow: hidden;
-    max-width: 49.6875em;
+    max-width: 352.5px;
     flex: none;
     width: 100%;
   }
@@ -459,7 +459,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-sidebar {
-    max-width: 49.6875em;
+    /* max-width: 49.6875em; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -559,16 +559,18 @@
 }
 
 /* Tablet - 1024px */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 48em) {
   .blog-sidebar {
     max-width: 1000px;
     margin: 0 auto;
   }
+
   .blog-sidebar .blog-feature {
     justify-content: center;
     padding: 0;
     border-bottom: none;
   }
+
   .blog-sidebar .blog-featured-group .featured-post-list {
     display: flex;
     /* padding: 2.1875em 1.875em;
