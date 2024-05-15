@@ -245,7 +245,7 @@
     padding: 24px 0;
     gap: 2rem;
     max-width: 1000px;
-    width: 100%;
+    width: auto;
     /* display: flex;
     flex-direction: column;
     align-items: center;

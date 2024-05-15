@@ -1,13 +1,14 @@
 ---
-pageName: january-news
-blogTitle: Jan 2023 FLL News
-titleTag: 18 Jan 2023 Friends of the Logan Library News
-blogDescription: News Updates for the Friends of the Logan Library in January 2023
+pageName: july-meeting-minutes
+blogTitle: July 2023 FLL Board Meeting
+titleTag: 18 July 2023 Friends of the Logan Library Board Meeting
+blogDescription: Meeting minutes from the Friends of the Logan Library Board
+  Meeting in July 18, 2023
 author: Jordan Zappitello
-date: 2023-01-18T16:30:18.253Z
+date: 2023-07-18T16:30:18.253Z
 tags:
   - post
-  - featured
+  - minutes
 image: /images/blog/cta2.png
 imageAlt: Kitchen
 ---

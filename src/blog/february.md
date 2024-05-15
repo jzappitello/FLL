@@ -1,10 +1,10 @@
 ---
-pageName: january-news
-blogTitle: Jan 2023 FLL News
-titleTag: 18 Jan 2023 Friends of the Logan Library News
-blogDescription: News Updates for the Friends of the Logan Library in January 2023
+pageName: february-news
+blogTitle: Feb 2023 FLL News
+titleTag: 18 Feb 2023 Friends of the Logan Library News
+blogDescription: News Updates for the Friends of the Logan Library in February 2023
 author: Jordan Zappitello
-date: 2023-01-18T16:30:18.253Z
+date: 2023-02-18T16:30:18.253Z
 tags:
   - post
   - featured
