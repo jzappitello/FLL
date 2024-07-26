@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -29,11 +29,11 @@
 
   #hero .cs-picture:before {
     /* Black Color Overlay */
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: .6;
+    opacity: 0.6;
     position: absolute;
     display: block;
     top: 0;
@@ -98,7 +98,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 1rem;
@@ -145,11 +145,11 @@
     display: inline-block;
     position: relative;
     z-index: 1;
-    transition: color .3s;
+    transition: color 0.3s;
   }
 
   #hero .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
@@ -159,7 +159,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width .3s;
+    transition: width 0.3s;
   }
 
   #hero .cs-button-solid:hover {
@@ -193,7 +193,7 @@
   }
 
   #hero .cs-button-transparent:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     background: #000;
@@ -207,7 +207,7 @@
     transform-origin: left;
     /* this is what creates the grow affect on hover */
     transform: scaleX(0);
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
 
   #hero .cs-button-transparent:hover:before {
@@ -233,11 +233,19 @@
 
   #hero .cs-container:after {
     /* Right Line */
-    content: '';
+    content: "";
     width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
     opacity: 1;
     position: absolute;
     display: block;
@@ -254,7 +262,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25em) {
   #hero {
-    background: url("/images/landing-2000w.jpeg");
+    /* background: url("/images/landing-2000w.jpeg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,7 +274,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #hero .cs-background:before {
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
@@ -332,7 +340,7 @@
     text-align: center;
     line-height: 1.33333333em;
     width: 100%;
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
