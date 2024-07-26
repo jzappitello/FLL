@@ -28,39 +28,20 @@ eleventyNavigation:
 
 <section id="cs-contact">
     <div class="cs-container">
-        <form id="cs-form" name="Contact Form" method="post">
+        <div id="cs-form" name="Contact Form">
             <div class="cs-content">
                 <span class="cs-topper">Thank You</span>
                 <h2 class="cs-title">Empower Our Mission</h2>
                 <p class="cs-text">
                     Make a difference in your community by donating a monetary gift to the Friends of the Logan Library. The funds earned support special projects, equipment, programs, collections, and library improvements. Please email for any information regarding donations.
-                    <br/>
-                    <br/>
+                    <br aria-hidden="true"/>
+                    <br aria-hidden="true"/>
                     The Friends of the Logan Library is a non-profit 501(c)(3) organization with a board of elected officers.
                 </p>
             </div>
-            <label>
-                Name
-                <input required type="text" id="name" name="name" placeholder="Name">
-            </label>
-            <label>
-                Email
-                <input required type="text" id="email" name="email" placeholder="Email">
-            </label>
-            <label>
-                Phone
-                <input required type="text" id="phone" name="phone" placeholder="Phone">
-            </label>
-            <label>
-                City/Zip
-                <input type="text" id="find" name="find-us" placeholder="City/Zip">
-            </label>
-            <label class="cs-label-message">
-                Message
-                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-            </label>
-            <button class="cs-button-solid" type="submit">Send Donation</button>
-        </form>
+            <button id="openModal" class="cs-button-solid" target="_blank" onclick="window.open('https://www.zeffy.com/en-US/donation-form/617a9fac-44fe-48c8-ab2a-d361d3e94962', '_blank');">Donate Now</button>
+            {# <button class="cs-button-solid" type="submit">Send Donation</button> #}
+        </div>
         <div class="cs-right-section-two">
             <!--Email-->
             <span class="cs-header">Email</span>
@@ -77,6 +58,7 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->

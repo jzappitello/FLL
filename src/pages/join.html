@@ -28,7 +28,7 @@ eleventyNavigation:
 
 <section id="cs-contact">
   <div class="cs-container">
-    <form id="cs-form" name="Contact Form" method="post">
+    <div id="cs-form" name="Contact Form">
       <div class="cs-content">
         <span class="cs-topper">Welcome</span>
         <h2 class="cs-title">Benefits of Joining</h2>
@@ -42,7 +42,7 @@ eleventyNavigation:
           <li class="cs-list-item">Email updates;</li>
           <li class="cs-list-item">Invitation to special events.</li>
         </div>
-        <label>
+        {# <label>
                 Name
                 <input required type="text" id="name" name="name" placeholder="Name">
         </label>
@@ -69,9 +69,11 @@ eleventyNavigation:
         <label class="cs-label-message">
                 Message
                 <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-        </label>
-        <button class="cs-button-solid" type="submit">Submit</button>
-      </form>
+        </label> #}
+        
+      <button class="cs-button-solid" target="_blank" onclick="window.open('https://www.zeffy.com/en-US/ticketing/ee9ad3df-50d0-41da-8f51-8d958b416d62', '_blank');">Join Friends</button>
+        {# <button class="cs-button-solid" type="submit">Submit</button> #}
+      </div>
       <div class="cs-right-section">
         <!--Email-->
         <span class="cs-header">Email</span>

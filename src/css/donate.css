@@ -14,7 +14,7 @@
   }
 
   #cs-contact {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     padding: var(--sectionPadding);
   }
 
@@ -34,7 +34,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
     /* 8px - 12px */
@@ -109,11 +109,11 @@
     height: 4rem;
     margin-top: 0.25rem;
     padding-left: 1.25rem;
-    border: 1px solid #B4B2C7;
+    border: 1px solid #b4b2c7;
     border-radius: 0.5rem;
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
-    transition: border .3s;
+    transition: border 0.3s;
   }
 
   #cs-contact #cs-form input:hover,
@@ -152,7 +152,7 @@
   }
 
   #cs-contact .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 0%;
@@ -162,7 +162,7 @@
     left: 0;
     z-index: -1;
     border-radius: 0.25rem;
-    transition: width .3s;
+    transition: width 0.3s;
   }
 
   #cs-contact .cs-button-solid:hover {
@@ -177,6 +177,7 @@
   #cs-contact .cs-right-section {
     position: relative;
     height: 30rem;
+    max-height: 40rem;
     background-image: url("https://res.cloudinary.com/dbr4il6bz/image/upload/v1713762144/qah30kdl8z2t4wi0gukl.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,6 +197,7 @@
   #cs-contact .cs-right-section-two {
     position: relative;
     height: 30rem;
+    max-height: 40rem;
     background-image: url("https://res.cloudinary.com/dbr4il6bz/image/upload/v1713762396/zju5nq2elq0yoil1mtmr.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,7 +237,7 @@
 
   #cs-contact .cs-link:before {
     /* Animated underline */
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     /* current color of the parent */
@@ -245,7 +247,7 @@
     display: block;
     bottom: -0.125rem;
     left: 0;
-    transition: width .3s;
+    transition: width 0.3s;
   }
 
   #cs-contact .cs-link:hover:before {
@@ -269,17 +271,21 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: transform .6s;
+    transition: transform 0.6s;
   }
 
   #cs-contact .cs-bg-picture:before {
     /* background color overlay */
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     top: 0;
     left: 0;
     z-index: 1;
@@ -396,7 +402,6 @@
 
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-
   body.dark-mode #cs-contact .cs-text,
   body.dark-mode #cs-contact .cs-title {
     color: var(--bodyTextColorWhite);
@@ -422,6 +427,6 @@
 
   body.dark-mode #cs-contact .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
-    opacity: .5;
+    opacity: 0.5;
   }
 }

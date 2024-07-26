@@ -246,12 +246,14 @@
     gap: 2rem;
     max-width: 1000px;
     width: auto;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+
+  .main-content-two {
+    display: flex;
     justify-content: center;
-    row-gap: 3.125em;
-    width: 100%; */
+    margin: 0 auto;
+    padding: 24px 0;
+    width: 100%;
   }
 }
 
