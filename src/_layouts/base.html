@@ -169,20 +169,26 @@
                     <div>${e.start.date}</div>
                 </div>
                 <div class="event-info">
-                    <p>${e.dateRange}</p>
-                    <h3 class="cs-title event-title">
-                    <a class="cs-link" href="${e.link}">${e.name}</a>
-                    </h3>
-                    <div class="other-details">
-                    <button class="details-dropdown" aria-expanded="false" aria-controls="details-${i}" id="btn-${i}">
-                        <p class="dropdown-label">See details</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="details-content hidden" id="details-${i}" aria-labelledby="btn-${i}">
-                        <p class="details-content-text">${e.description}</p>
-                    </div>
+                    <div>
+                        <p>${e.dateRange}</p>
+                        <h3 class="cs-title event-title">
+                        <a class="cs-link" href="${e.link}">${e.name}</a>
+                        </h3>
+                        ${
+                            e.description
+                            ? `<div class="other-details">
+                                <button class="details-dropdown" aria-expanded="false" aria-controls="details-${i}" id="btn-${i}">
+                                    <p class="pointer-events-none">See details</p>
+                                    {# <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg> #}
+                                </button>
+                                <div class="details-content hidden" id="details-${i}" aria-labelledby="btn-${i}">
+                                    <p class="details-content-text">${e.description}</p>
+                                </div>
+                              </div>`
+                            : '<div></div>'
+                        }
                     </div>
                     <a href="" class="view-event-btn">View Event</a>
                 </div>
@@ -201,7 +207,7 @@
                 .map((event, i) => createEvent(event, i))
                 .join("");
             } catch (e) {
-                eventContainer.innerHTML = `<p>Failed to load events</p>`;
+                eventContainer.innerHTML = `<p class="cs-text">While there are currently no upcoming events, we invite you to attend our board meetings, which are open to the public. These meetings provide valuable insights into our activities and offer opportunities for community involvement.</p>`;
                 console.log(e);
             }
             }
@@ -225,8 +231,8 @@
                     detailsContent.classList.toggle("hidden");
                     
                     // Rotate the SVG icon
-                    const svg = button.querySelector("svg");
-                    svg.style.transform = isExpanded ? "rotate(0deg)" : "rotate(180deg)";
+                    {# const svg = button.querySelector("svg");
+                    svg.style.transform = isExpanded ? "rotate(0deg)" : "rotate(180deg)"; #}
                     
                     // Change button text
                     const labelElement = button.querySelector(".dropdown-label");
