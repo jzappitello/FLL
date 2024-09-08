@@ -172,7 +172,7 @@
                     <div>
                         <p>${e.dateRange}</p>
                         <h3 class="cs-title event-title">
-                        <a class="cs-link" href="${e.link}">${e.name}</a>
+                        <a class="cs-link" href="${e.link}" target="_blank">${e.name}</a>
                         </h3>
                         ${
                             e.description
@@ -190,7 +190,7 @@
                             : '<div></div>'
                         }
                     </div>
-                    <a href="" class="view-event-btn">View Event</a>
+                    <a href="${e.link}" target="_blank" class="view-event-btn">View Event</a>
                 </div>
                 </article>`;
             }
