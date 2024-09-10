@@ -121,6 +121,7 @@
     display: inline-block;
     width: auto;
     line-height: 3.125em;
+    border-radius: 0.25rem;
     height: 3.125rem;
     text-align: center;
     padding: 0 1.875rem;
@@ -143,6 +144,7 @@
   .button-solid:before {
     content: "";
     position: absolute;
+    border-radius: 0.25rem;
     display: block;
     height: 100%;
     opacity: 1;

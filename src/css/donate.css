@@ -59,7 +59,7 @@
     text-align: left;
     width: 100%;
     /* 404px - 522px */
-    max-width: clamp(25.25rem, 30vw, 32.625rem);
+    max-width: clamp(35.25rem, 40vw, 42.625rem);
     margin: 0 auto 0 0;
     /* 40px - 48px */
     margin-bottom: clamp(1rem, 6.3vw, 1.5rem);
@@ -317,6 +317,14 @@
 
   #cs-contact #cs-form .cs-label-message {
     width: 100%;
+  }
+
+  #cs-contact #cs-form .cs-button-solid {
+    width: 11.25rem;
+  }
+
+  #cs-contact .cs-button-solid {
+    margin: 0;
   }
 }
 

@@ -265,9 +265,9 @@
     gap: 3.125em;
   }
 
-  .recent-articles .article-button {
+  /* .recent-articles .article-button {
     width: auto !important;
-  }
+  } */
 }
 
 /* Tablet - 1024px */

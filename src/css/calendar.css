@@ -299,7 +299,8 @@ body.dark-mode #placeholders .cs-text {
   font-size: 1rem;
   /* 46px - 56px */
   line-height: clamp(2.875em, 5.5vw, 3.5em);
-  width: 11.25rem;
+  width: 15.5rem;
+  border-radius: 0.25rem;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
@@ -316,6 +317,7 @@ body.dark-mode #placeholders .cs-text {
 #placeholders .cs-button-solid:before {
   content: "";
   position: absolute;
+  border-radius: 0.25rem;
   display: block;
   height: 100%;
   width: 0%;
