@@ -290,7 +290,7 @@
 @media only screen and (min-width: 0em) {
   .recent-articles {
     overflow: hidden;
-    max-width: 325px;
+    max-width: 350px;
     flex: none;
     width: 100%;
   }

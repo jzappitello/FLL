@@ -349,6 +349,12 @@ CAL-TEST
   width: 100%;
 }
 
+@media only screen and (min-width: 48em) {
+  #cal-test {
+    gap: 2rem;
+  }
+}
+
 #cal-test .event-card {
   width: 100%;
   background-color: #f7f7f7;
@@ -415,7 +421,7 @@ body.dark-mode #cal-test .event-card {
 }
 
 #cal-test .event-card .other-details {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   display: grid;
   gap: 0.25rem;
   place-items: center;
@@ -451,6 +457,11 @@ body.dark-mode #cal-test .event-card {
   gap: 4px;
   max-height: 150px; /* Limit the height */
   overflow-y: auto; /* Add scrolling if content is too long */
+}
+
+#cal-test .event-card .details-content-text {
+  max-width: 254px;
+  font-size: 1rem;
 }
 
 #cal-test .event-card .hidden {
