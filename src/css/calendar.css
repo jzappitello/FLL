@@ -480,4 +480,30 @@ body.dark-mode #cal-test .event-card {
   width: 100%;
   text-align: center;
   border-radius: 4px;
+  position: relative; /* Add this to position the ::before pseudo-element correctly */
+  z-index: 1; /* Ensure the button text stays above the background */
+  transition: color 0.3s; /* Add transition for color change */
+}
+
+#cal-test .event-card .view-event-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #000; /* Background color for the hover effect */
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the background is behind the text */
+  transition: width 0.3s; /* Smooth transition for the background expansion */
+  border-radius: 4px; /* Match the border-radius of the button */
+}
+
+#cal-test .event-card .view-event-btn:hover {
+  color: var(--bodyTextColorWhite); /* Color change on hover */
+}
+
+#cal-test .event-card .view-event-btn:hover::before {
+  width: 100%; /* Full width background on hover */
 }

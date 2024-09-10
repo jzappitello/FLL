@@ -116,7 +116,7 @@
   .button-solid {
     font-size: 1rem;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     display: inline-block;
     width: auto;
