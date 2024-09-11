@@ -195,7 +195,7 @@
                 </article>`;
             }
 
-            async function loadEvents(max = 9) {
+            async function loadEvents(max = 6) {
             try {
                 const endpoint = await fetch(
                 `/.netlify/functions/calFetch?maxResults=${max}`

@@ -8,7 +8,7 @@ const HEADERS = {
 };
 
 exports.handler = async function (event, context) {
-  const finalURL = `${BASEURL}&maxResults=9&key=${CAL_API}`;
+  const finalURL = `${BASEURL}&maxResults=6&key=${CAL_API}`;
   try {
     if (event.httpMethod === "GET") {
       return fetch(finalURL)
