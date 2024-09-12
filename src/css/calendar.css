@@ -187,6 +187,10 @@
     display: block;
   }
 
+  body.dark-mode #sbs-r .cs-topper {
+    color: var(--primaryShade);
+  }
+
   #sbs-r .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
@@ -200,6 +204,17 @@
 
   #sbs-r .cs-text {
     font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+
+  #sbs-r .sponsored {
+    font-size: 0.6rem;
     line-height: 1.5em;
     text-align: left;
     width: 100%;
@@ -288,10 +303,6 @@
     background-color: var(--dark);
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-  }
-
-  body.dark-mode #sbs-r .cs-topper {
-    color: var(--primaryLight);
   }
 
   body.dark-mode #sbs-r .cs-title,
@@ -476,6 +487,10 @@ PLACEHOLDER
   color: var(--primary);
   margin-bottom: 1rem;
   display: block;
+}
+
+body.dark-mode #placeholders .cs-topper {
+  color: var(--primaryShade);
 }
 
 #placeholders .cs-title {
