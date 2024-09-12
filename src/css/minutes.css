@@ -265,9 +265,9 @@
     gap: 3.125em;
   }
 
-  .recent-articles .article-button {
+  /* .recent-articles .article-button {
     width: auto !important;
-  }
+  } */
 }
 
 /* Tablet - 1024px */
@@ -290,7 +290,7 @@
 @media only screen and (min-width: 0em) {
   .recent-articles {
     overflow: hidden;
-    max-width: 325px;
+    max-width: 350px;
     flex: none;
     width: 100%;
   }

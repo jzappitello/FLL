@@ -100,6 +100,234 @@
 }
 
 /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #sbs-r {
+    padding: var(--sectionPadding);
+  }
+
+  #sbs-r .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  #sbs-r .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    /* old height - height: 39.75em; */
+    /* new height */
+    height: 27.75em;
+    position: relative;
+  }
+
+  #sbs-r .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  #sbs-r .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+
+  #sbs-r .cs-picture1 {
+    width: 32.625em;
+    /* old height - height: 36.3125em; */
+    /* new height */
+    height: 14.15em;
+    right: 0;
+    top: 0;
+  }
+
+  #sbs-r .cs-picture2 {
+    width: 25.875em;
+    /* old height - height: 25em; */
+    /* new height */
+    height: 16.25em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    left: 0;
+    bottom: 0;
+  }
+
+  #sbs-r .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+
+  #sbs-r .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
+  body.dark-mode #sbs-r .cs-topper {
+    color: var(--primaryShade);
+  }
+
+  #sbs-r .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  #sbs-r .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+
+  #sbs-r .sponsored {
+    font-size: 0.6rem;
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+
+  #sbs-r .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  #sbs-r .cs-flex-group {
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  #sbs-r .cs-flex-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
+  }
+
+  #sbs-r .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+
+  #sbs-r .cs-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #767676;
+    display: block;
+  }
+
+  #sbs-r .cs-quote-icon {
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #sbs-r .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+
+  #sbs-r .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+    /* sends it to the right */
+    order: 2;
+  }
+
+  #sbs-r .cs-right {
+    margin: 0;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #sbs-r .cs-left:before,
+  body.dark-mode #sbs-r .cs-left:after {
+    background: var(--accent);
+  }
+
+  body.dark-mode #sbs-r .cs-picture2 {
+    background-color: var(--dark);
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+  }
+
+  body.dark-mode #sbs-r .cs-title,
+  body.dark-mode #sbs-r .cs-text,
+  body.dark-mode #sbs-r .cs-h3,
+  body.dark-mode #sbs-r .cs-flex-p,
+  body.dark-mode #sbs-r .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #sbs-r .cs-flex-group {
+    background-color: var(--accent);
+  }
+
+  body.dark-mode #sbs-r .cs-job {
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+
+  body.dark-mode #sbs-r .cs-quote-icon {
+    opacity: 0.2;
+  }
+}
+
+/*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 /* Mobile */
@@ -110,13 +338,13 @@
   }
 
   #cta:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .6;
+    opacity: 0.6;
     top: 0;
     left: 0;
     z-index: -1;
@@ -184,7 +412,7 @@
   }
 
   #cta:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 69.25rem;
@@ -212,13 +440,13 @@
   }
 
   #cta picture:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .6;
+    opacity: 0.6;
     top: 0;
     left: 0;
     z-index: 1;
@@ -232,7 +460,6 @@
   }
 }
 
-
 /* ============================================
 PLACEHOLDER
 ============================================ */
@@ -245,7 +472,7 @@ PLACEHOLDER
   margin: 0 auto;
   padding: 40px 16px;
   gap: 1rem;
-  max-width: 1000px;
+  max-width: 80rem;
   width: 100%;
 }
 
@@ -255,11 +482,15 @@ PLACEHOLDER
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 1rem;
   display: block;
+}
+
+body.dark-mode #placeholders .cs-topper {
+  color: var(--primaryShade);
 }
 
 #placeholders .cs-title {
@@ -300,7 +531,8 @@ body.dark-mode #placeholders .cs-text {
   font-size: 1rem;
   /* 46px - 56px */
   line-height: clamp(2.875em, 5.5vw, 3.5em);
-  width: 11.25rem;
+  width: 15.5rem;
+  border-radius: 0.25rem;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
@@ -311,12 +543,13 @@ body.dark-mode #placeholders .cs-text {
   display: inline-block;
   position: relative;
   z-index: 1;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 #placeholders .cs-button-solid:before {
-  content: '';
+  content: "";
   position: absolute;
+  border-radius: 0.25rem;
   display: block;
   height: 100%;
   width: 0%;
@@ -325,7 +558,7 @@ body.dark-mode #placeholders .cs-text {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 #placeholders .cs-button-solid:hover {
@@ -336,27 +569,60 @@ body.dark-mode #placeholders .cs-text {
   width: 100%;
 }
 
-
 /* ============================================
 CAL-TEST
 ============================================ */
 
-#cal-test {
+/* #cal-test {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  place-items: center;
   margin: 0 auto;
-  padding: 40px 16px;
+  padding: 1rem 1rem 2rem;
   gap: 1rem;
   max-width: 1000px;
   width: 100%;
+} */
+
+#cal-test {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  place-items: center;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  #cal-test {
+    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  #cal-test {
+    row-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 #cal-test .event-card {
-  /* background-color: #fff; */
-  background-color: #F7F7F7;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 350px;
+  background-color: #f7f7f7;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure full height */
+}
+
+@media only screen and (min-width: 64em) {
+  #cal-test .event-card {
+    max-width: 400px;
+  }
 }
 
 body.dark-mode #cal-test .event-card {
@@ -373,26 +639,39 @@ body.dark-mode #cal-test .event-card {
 }
 
 #cal-test .event-card .date p {
-  color: #fff;
+  color: var(--headerColor);
   font-size: 0.875rem;
 }
 
 #cal-test .event-card .date div {
   font-size: 1.875rem;
-  color: #fff;
+  color: var(--headerColor);
   font-weight: 900;
 }
 
 #cal-test .event-card .event-info {
   padding: 1rem;
-  display: grid;
-  place-items: center;
-  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1; /* Allow this to grow */
+  gap: 1rem;
+}
+
+#cal-test .event-card .event-info > div:first-child {
+  flex-grow: 1; /* This will push the button to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+#cal-test .event-card .event-info p {
+  text-align: center;
 }
 
 #cal-test .event-card .event-info .cs-title {
   /* color: var(--headerColor); */
   text-align: center;
+  line-height: 0.75em;
 }
 
 #cal-test .event-card .event-info .cs-title .cs-link {
@@ -402,8 +681,9 @@ body.dark-mode #cal-test .event-card {
 }
 
 #cal-test .event-card .other-details {
-  padding: 1rem;
+  /* padding: 0.5rem; */
   display: grid;
+  gap: 0.25rem;
   place-items: center;
 }
 
@@ -419,6 +699,7 @@ body.dark-mode #cal-test .event-card {
 #cal-test .event-card .details-dropdown p {
   font-size: 0.875rem;
   pointer-events: none;
+  text-decoration: underline;
 }
 
 #cal-test .event-card .details-dropdown svg {
@@ -434,12 +715,24 @@ body.dark-mode #cal-test .event-card {
 #cal-test .event-card .details-content {
   display: grid;
   gap: 4px;
+  max-height: 150px; /* Limit the height */
+  overflow-y: auto; /* Add scrolling if content is too long */
+}
+
+#cal-test .event-card .details-content-text {
+  max-width: 254px;
+  font-size: 1rem;
+}
+
+#cal-test .event-card .hidden {
+  display: none;
 }
 
 #cal-test .event-card .view-event-btn {
   background-color: var(--primary);
-  color: #fff;
+  color: var(--headerColor);
   padding: 8px 16px;
+  margin-top: auto; /* Push to bottom */
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   cursor: pointer;
   font-weight: 600;
@@ -447,4 +740,30 @@ body.dark-mode #cal-test .event-card {
   width: 100%;
   text-align: center;
   border-radius: 4px;
+  position: relative; /* Add this to position the ::before pseudo-element correctly */
+  z-index: 1; /* Ensure the button text stays above the background */
+  transition: color 0.3s; /* Add transition for color change */
+}
+
+#cal-test .event-card .view-event-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #000; /* Background color for the hover effect */
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the background is behind the text */
+  transition: width 0.3s; /* Smooth transition for the background expansion */
+  border-radius: 4px; /* Match the border-radius of the button */
+}
+
+#cal-test .event-card .view-event-btn:hover {
+  color: var(--bodyTextColorWhite); /* Color change on hover */
+}
+
+#cal-test .event-card .view-event-btn:hover::before {
+  width: 100%; /* Full width background on hover */
 }

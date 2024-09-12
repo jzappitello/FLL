@@ -8,7 +8,7 @@ preloadCSS: '/css/calendar.css'
 permalink: 'calendar/'
 eleventyNavigation:
     key: Calendar
-    order: 300
+    order: 200
 ---
 
 <!-- Enter html code below -->
@@ -24,14 +24,42 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--                   Placeholder                 -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image 'https://res.cloudinary.com/dbr4il6bz/image/upload/v1726014775/iilchvuuzwekavcvjrae.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image 'https://res.cloudinary.com/dbr4il6bz/image/upload/v1726014832/stoqfuncsacj6eyuuozy.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Join Us</span>
+      <h2 class="cs-title">An Evening with Gaylord Schanilec</h2>
+      <p class="cs-text">
+        Please join us on October 21, 2024 at the Logan Library at 7:00pm. There is a presentation by Gaylord Schanilec, an artist and co-author with Terry Tempest Williams - "Oracle Bones" (Red Butte Press, 2024). The presentation is free and open to the public.
+      </p>
+      <p class="cs-text sponsored">
+        Sponsored by: Diane and Bill Oblock, Utah State University: Merrill-Cazier Library Special Collections and Archive, College of Humanitics and Social Sciences, Department of English, Caine College of the Arts, Department of Art and Design, Quinney College of Natural Resources, Wildlife Resources Department, Nora Eccles Harrison Museum of Art, James Kennedy, (Emeritus Professor), Terry and David Peak, Frank and Deborah Ascione, Janet Osborne, SpringHill Suites by Marriott Logan
+      </p>
+      <a href="https://calendar.app.google/H8S59mViJMtRtXgNA" target="_blank" class="button-solid">View Event</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Calendar                    -->
 <!-- ============================================ -->
 
 <section id='placeholders'>
   <div class="no-events-placeholder">
-    <span class="cs-topper">Check Back Soon!</span>
-    <h2 class="cs-title">Currently No Upcoming Events</h2>
-    <p class="cs-text">While there are currently no upcoming events, we invite you to attend our board meetings, which are open to the public. These meetings provide valuable insights into our activities and offer opportunities for community involvement.</p>
+    <span class="cs-topper">See Upcoming Events!</span>
+    <h2 class="cs-title">Our Calendar</h2>
+    <div id='cal-test'>
+</div>
+    {# <p class="cs-text">While there are currently no upcoming events, we invite you to attend our board meetings, which are open to the public. These meetings provide valuable insights into our activities and offer opportunities for community involvement.</p> #}
     <p class="cs-text">We also invite you to check out the library's calendar for more community events.</p>
     <div class="cs-button-container">
       <a href="https://library.loganutah.org/calendar.php" target="_blank" class="cs-button-solid">
@@ -41,12 +69,12 @@ eleventyNavigation:
   </div>
 </section>
 
-<!-- ============================================ -->
-<!--                   Calendar                    -->
-<!-- ============================================ -->
 
-{# <section id='cal-test'>
-  <article class="dark-mode event-card">
+
+<!-- ============================================ -->
+<!--                   SAMPLE CARD                -->
+<!-- ============================================ -->
+{# <article class="dark-mode event-card">
     <div class="date">
       <p>
         APR
@@ -75,147 +103,9 @@ eleventyNavigation:
       </div>
       <a href="" class="view-event-btn">View Event</a>
     </div>
-  </article>
-  <article class="dark-mode event-card">
-    <div class="date">
-      <p>
-        APR
-      </p>
-      <div>
-        17
-      </div>
-    </div>
-    <div class="event-info">
-      <p> Apr 17 - Apr 19</p>
-      <h3 class="cs-title event-title">
-        <a class="cs-link" href="">New Home Construction</a>
-      </h3>
-      <div class="other-details">
-        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
-          <p class="dropdown-label">See details</p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="details-content" id="details-1" aria-labelledby="btn-1">
-          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
-        </div>
-      </div>
-      <a href="" class="view-event-btn">View Event</a>
-    </div>
-  </article>
-  <article class="dark-mode event-card">
-    <div class="date">
-      <p>
-        APR
-      </p>
-      <div>
-        17
-      </div>
-    </div>
-    <div class="event-info">
-      <p> Apr 17 - Apr 19</p>
-      <h3 class="cs-title event-title">
-        <a class="cs-link" href="">New Home Construction</a>
-      </h3>
-      <div class="other-details">
-        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
-          <p class="dropdown-label">See details</p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="details-content" id="details-1" aria-labelledby="btn-1">
-          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
-        </div>
-      </div>
-      <a href="" class="view-event-btn">View Event</a>
-    </div>
-  </article>
-  <article class="dark-mode event-card">
-    <div class="date">
-      <p>
-        APR
-      </p>
-      <div>
-        17
-      </div>
-    </div>
-    <div class="event-info">
-      <p> Apr 17 - Apr 19</p>
-      <h3 class="cs-title event-title">
-        <a class="cs-link" href="">New Home Construction</a>
-      </h3>
-      <div class="other-details">
-        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
-          <p class="dropdown-label">See details</p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="details-content" id="details-1" aria-labelledby="btn-1">
-          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
-        </div>
-      </div>
-      <a href="" class="view-event-btn">View Event</a>
-    </div>
-  </article>
-  <article class="dark-mode event-card">
-    <div class="date">
-      <p>
-        APR
-      </p>
-      <div>
-        17
-      </div>
-    </div>
-    <div class="event-info">
-      <p> Apr 17 - Apr 19</p>
-      <h3 class="cs-title event-title">
-        <a class="cs-link" href="">New Home Construction</a>
-      </h3>
-      <div class="other-details">
-        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
-          <p class="dropdown-label">See details</p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="details-content" id="details-1" aria-labelledby="btn-1">
-          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
-        </div>
-      </div>
-      <a href="" class="view-event-btn">View Event</a>
-    </div>
-  </article>
-  <article class="dark-mode event-card">
-    <div class="date">
-      <p>
-        APR
-      </p>
-      <div>
-        17
-      </div>
-    </div>
-    <div class="event-info">
-      <p> Apr 17 - Apr 19</p>
-      <h3 class="cs-title event-title">
-        <a class="cs-link" href="">New Home Construction</a>
-      </h3>
-      <div class="other-details">
-        <button class="details-dropdown" aria-expanded="false" aria-controls="details-1" id="btn-1">
-          <p class="dropdown-label">See details</p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="details-content" id="details-1" aria-labelledby="btn-1">
-          <p class="details-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum nemo reiciendis maxime. Fugiat, officiis? Officiis necessitatibus nulla veniam fugiat consectetur, porro cumque dolor, eligendi amet, quidem non inventore hic omnis? Id obcaecati, quibusdam maxime nulla illum consectetur libero soluta atque quasi, ad veniam laudantium. Laborum nisi soluta nostrum maiores.</p>
-        </div>
-      </div>
-      <a href="" class="view-event-btn">View Event</a>
-    </div>
-  </article>
+  </article> #}
+
+{# <section id='cal-test'>
 </section> #}
 
 <!-- ============================================ -->

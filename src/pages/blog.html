@@ -8,7 +8,7 @@ preloadCSS: '/css/minutes.css'
 permalink: 'updates/'
 eleventyNavigation:
     key: Updates
-    order: 200
+    order: 300
 ---
 
 <!-- Enter html code below -->
@@ -58,22 +58,26 @@ eleventyNavigation:
                 <div class="article-group">
                     <div class="blog-authorGroup">
                         <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-              src="/assets/svgs/profile.svg"
-              alt="house"
-              width="32"
-              height="32"
-              decoding="async"/>
-                        </picture>
+                        <a href="{{ post.url }}">
+                            <picture class="blog-author-img">
+                                <img
+                                          src="/assets/svgs/profile.svg"
+                                          alt="house"
+                                          width="32"
+                                          height="32"
+                                          decoding="async"/>
+                            </picture>
+                        </a>
                         <span class="blog-author">{{ post.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
                         <!--Blog Date-->
                         <span class="blog-date">{{ post.date | postDate }}</span>
                     </div>
-                    <h2 class="blog-h1">
-                        {{ post.data.blogTitle }}
-                    </h2>
+                    <a href="{{ post.url }}">
+                        <h2 class="blog-h1">
+                            {{ post.data.blogTitle }}
+                        </h2>
+                    </a>
                     <p class="blog-desc">
                         {{ post.data.blogDescription }}
                     </p>
