@@ -84,7 +84,6 @@
         </script>
         <script type="module">
             if (document.getElementById("cal-test")) {
-                console.log("booyah")
             const eventContainer = document.querySelector("#cal-test");
             const eventAmtToFetch = document.querySelector("#eventAmt");
 
@@ -201,7 +200,6 @@
                 `/.netlify/functions/calFetch?maxResults=${max}`
                 );
                 const data = await endpoint.json();
-                console.log(data);
                 const processedEvents = data.map((e) => mapEventObject(e));
                 eventContainer.innerHTML = processedEvents
                 .map((event, i) => createEvent(event, i))
@@ -248,6 +246,7 @@
             }
 
         </script>
+        <script async data-id="101464748" src="//static.getclicky.com/js"></script>
 
     </body>
 </html>
