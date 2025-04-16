@@ -1,25 +1,65 @@
 <div class="blog-sidebar">
   <!--Featured-->
   <div class="blog-featured-group">
-    <span class="blog-header">Recent News</span>
-    <div class='featured-post-list'>
-      {%- for post in collections.featured | reverse -%}
-        <a class="blog-feature" href="{{ post.url }}">
-          <picture class="blog-featureImage">
-            <img
-            src="{{ post.data.image }}"
-            alt="{{ post.data.imageAlt }}"
-            width="60"
-            height="60"
-            decoding="async"
-      />
-          </picture>
-          <div class="content-group">
-            <h3 class="feature-h3">{{ post.data.blogTitle }}</h3>
-            <span class="feature-date">{{ post.date | postDate }}</span>
+    <span class="blog-header">Frequently Visited</span>
+    <div class="featured-post-list">
+      <div class="featured-post-item">
+        <a
+          class="blog-featured-link"
+          target="_blank"
+          href="https://library.loganutah.gov/AboutUs/Friends/2017%20RESTATED%20BYLAWS%20FLL.pdf"
+        >
+          <div class="featured-content-group">
+            <h3 class="feature-h3">
+              Restated Bylaws Of The Friends of the Logan Library
+            </h3>
+            <span class="feature-date">October 2017</span>
           </div>
         </a>
-      {%- endfor -%}
+      </div>
+      <div class="featured-post-item">
+        <a
+          class="blog-featured-link"
+          target="_blank"
+          href="https://library.loganutah.gov/AboutUs/Friends/Friends%20Brochure%208.1.24.pdf"
+        >
+          <div class="featured-content-group">
+            <h3 class="feature-h3">
+              Friends of the Logan Library Membership Brochure
+            </h3>
+            <span class="feature-date">August 2024</span>
+          </div>
+        </a>
+      </div>
+      <div class="featured-post-item">
+        <a
+          class="blog-featured-link"
+          target="_blank"
+          href="https://library.loganutah.gov/AboutUs/Friends/MOU_FriendsOfTheLibrary_2014-04-12.pdf"
+        >
+          <div class="featured-content-group">
+            <h3 class="feature-h3">
+              Memorandum of Understanding Between Logan Library and Friends of
+              the Logan Library
+            </h3>
+            <span class="feature-date">April 2014</span>
+          </div>
+        </a>
+      </div>
+      <div class="featured-post-item">
+        <a
+          class="blog-featured-link"
+          target="_blank"
+          href="https://library.loganutah.gov/AboutUs/Friends/City%20of%20Logan%202020%20Friends%20of%20the%20Logan%20Library%20Week%20Proclamation.pdf"
+        >
+          <div class="featured-content-group">
+            <h3 class="feature-h3">
+              City of Logan, Friends of the Logan Library Week Proclamation
+            </h3>
+            <span class="feature-date">October 2020</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
   <!--Add anything else in the sidebar below-->
