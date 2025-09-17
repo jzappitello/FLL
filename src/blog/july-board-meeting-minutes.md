@@ -1,5 +1,5 @@
 ---
-pageName: July Board Meeting Minutes
+pageName: July-Board-Meeting-Minutes
 blogTitle: July Board Meeting Minutes
 titleTag: Board Meeting Minutes
 blogDescription: The following minutes detail the Friends of Logan Library Board
