@@ -6,7 +6,10 @@ blogDescription: The following minutes detail the Friends of Logan Library Board
   meeting held on July 16th, 2025.
 author: Brelle Christensen
 date: 2025-09-17T16:16:01.089Z
-tags: []
+tags:
+  - post
+  - minutes
+  - featured
 image: /images/blog/cta2.png
 imageAlt: Logan Library
 ---
